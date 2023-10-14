@@ -1,13 +1,20 @@
-#include <stdio.h>
-
-/**
- * It is a comment.
+/*
+ * File: 4-puts.c
+ * Author: 7727@holbertonschool.com
  */
 
 
+#include <stdio.h>
+
+/**
+ * main - Prints "Programming is like building a multilingual puzzle, followed by a new line.
+ *
+ * Return: Always 0.
+ */
+
 int main(void)
 {
-    char *variable = "\"Programming is like building a multilingual puzzle";
-    puts(variable);
+    puts("\"Programming is like building a multilingual puzzle");
+
     return 0;
 }
