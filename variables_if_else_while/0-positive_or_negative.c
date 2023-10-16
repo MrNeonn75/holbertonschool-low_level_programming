@@ -17,24 +17,30 @@
 
 int main(void)
 {
-// Variables
 int n;
 char last_string[50];
 
-// Get random number
+/**
+ * Get random number
+ * If number grater than 0, print "number is positive"
+ * Or if number is zero, print "number is zero"
+ * Else print "Number is negative"
+*/
+
+
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 
-// If number grater than 0, print "number is positive"
+
 if(n > 0)
 {
 strcpy(last_string, "is positive\n");
 }
-else if (n == 0) // Or if number is zero, print "number is zero"
+else if (n == 0)
 {
 strcpy(last_string, "is zero\n");
 }
-else // else print "Number is negative"
+else
 {
 strcpy(last_string, "is negative\n");
 }
