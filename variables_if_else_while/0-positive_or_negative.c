@@ -17,28 +17,28 @@
 
 int main(void)
 {
-    int n;
-    char last_string[50];
+int n;
+char last_string[50];
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
+srand(time(0));
+n = rand() - RAND_MAX / 2;
     
-    if(n > 0)
-    {
-        strcpy(last_string, "is positive\n");
-    }
-    else if (n == 0)
-    {
-        strcpy(last_string, "is zero\n");
-    }
-    else
-    {
-        strcpy(last_string, "is negative\n");
-    }
+if(n > 0)
+{
+strcpy(last_string, "is positive\n");
+}
+else if (n == 0)
+{
+strcpy(last_string, "is zero\n");
+}
+else
+{
+strcpy(last_string, "is negative\n");
+}
     
-    printf("%d %s", n, last_string);
+printf("%d %s", n, last_string);
 
-    return (0);
+return (0);
 
 }
 
