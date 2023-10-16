@@ -15,18 +15,11 @@
  * Return: Always 0.
  */
 
-/* Function main*/
-int main(void)
+
+int main(void) /* Function main */
 {
 int n;
 char last_string[50];
-
-/**
- * Get random number
- * If number grater than 0, print "number is positive"
- * Or if number is zero, print "number is zero"
- * Else print "Number is negative"
-*/
 
 /* Random and time function*/
 srand(time(0));
@@ -35,7 +28,7 @@ n = rand() - RAND_MAX / 2;
 
 if (n > 0)
 {
-strcpy(last_string, "is positive\n");
+strcpy(last_string, "is positive\n"); // Bndsafjaldshjfskahfl
 }
 else if (n == 0)
 {
