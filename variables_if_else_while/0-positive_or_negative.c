@@ -44,7 +44,6 @@ else
 {
 strcpy(last_string, "is negative\n");
 }
-    
 printf("%d %s", n, last_string);
 
 return (0);
