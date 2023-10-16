@@ -15,6 +15,7 @@
  * Return: Always 0.
  */
 
+/* Function main*/
 int main(void)
 {
 int n;
@@ -27,7 +28,7 @@ char last_string[50];
  * Else print "Number is negative"
 */
 
-
+/* Random and time function*/
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 
