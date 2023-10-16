@@ -10,7 +10,7 @@
 
 
 /**
- * Main - Prints last digit of random number
+ * Main - Check is the random number positive or negative
  *
  * Return: Always 0.
  */
@@ -18,11 +18,11 @@
 int main(void)
 {
     int n;
+    char last_string[50];
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-
-    char last_string[50];
+    
     if(n > 0)
     {
         strcpy(last_string, "is positive");
