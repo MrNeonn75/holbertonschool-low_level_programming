@@ -25,15 +25,15 @@ int main(void)
     
     if(n > 0)
     {
-        strcpy(last_string, "is positive");
+        strcpy(last_string, "is positive\n");
     }
     else if (n == 0)
     {
-        strcpy(last_string, "is zero");
+        strcpy(last_string, "is zero\n");
     }
     else
     {
-        strcpy(last_string, "is negative");
+        strcpy(last_string, "is negative\n");
     }
     
     printf("%d %s", n, last_string);
