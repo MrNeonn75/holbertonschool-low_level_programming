@@ -28,7 +28,7 @@ n = rand() - RAND_MAX / 2;
 
 if (n > 0)
 {
-strcpy(last_string, "is positive\n"); // Bndsafjaldshjfskahfl
+strcpy(last_string, "is positive\n"); /* Fsjfhlsdjkfgblsdflkj */
 }
 else if (n == 0)
 {
