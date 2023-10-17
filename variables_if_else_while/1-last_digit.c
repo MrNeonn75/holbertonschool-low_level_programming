@@ -23,6 +23,7 @@ int last_digit;
 char ls[50];
 char a[] = "Last digit of";
 char f[] = " and is ";
+char i[] = " is ";
 
 srand(time(0));
 n = rand() - RAND_MAX / 2;
@@ -57,11 +58,11 @@ strcpy(ls, "less than 6 and not 0\n");
 
 if (n < 0)
 {
-printf("%s %s is -%c%s%s",a, r, ln, f, ls);
+printf("%s %s%s-%c%s%s", a, r, i, ln, f, ls);
 }
 else
 {
-printf("%s %s is %c%s%s",a, r, ln, f, ls);
+printf("%s %s%s%c%s%s", a, r, i, ln, f, ls);
 }
 
 return (0);
