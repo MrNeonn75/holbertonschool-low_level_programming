@@ -1,5 +1,5 @@
 /*
- * File: 0-positive_or_negative.c
+ * File: 1-last_digit.c
  * Auth: 7727@holbertonschool.com
  */
 
@@ -8,13 +8,11 @@
 #include <time.h>
 #include <string.h>
 
-
 /**
- * Main - Prints last digit of random number
+ * main - Prints last digit of random number
  *
  * Return: Always 0.
  */
-
 int main(void)
 {
 int n;
@@ -23,14 +21,16 @@ srand(time(0));
 n = rand() - RAND_MAX / 2;
 
 char random_string_number[100];
-
 sprintf(random_string_number, "%d", n);
 
 int number_size = strlen(random_string_number);
 char last_number = random_string_number[number_size - 1];
-int last_digit = last_number - '0';  // Convert char to int
+int last_digit;
 
-char last_string[50];  // Declare outside the if-else block
+/* Convert char to int */
+last_digit = last_number - '0';
+
+char last_string[50];
 
 if (last_digit > 5)
 {
@@ -50,4 +50,3 @@ printf("Last digit of %s is %c and is %s", random_string_number, last_number, la
 return (0);
 
 }
-
