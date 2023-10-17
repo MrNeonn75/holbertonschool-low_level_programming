@@ -8,22 +8,21 @@
 #include <time.h>
 #include <string.h>
 
-
 /**
- * Main - Check is the random number positive or negative
+ * main - Entry point, checks if a random number is positive, negative, or zero
  *
- * Return: Always 0.
+ * Return: Always 0
  */
 int main(void)
 {
 int n;
 char last_string[50];
 
-/* Random and time function*/
+/* Generate a random number */
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 
-
+/* Check if the number is positive, negative, or zero */
 if (n > 0)
 {
 strcpy(last_string, "is positive\n");
@@ -36,9 +35,10 @@ else
 {
 strcpy(last_string, "is negative\n");
 }
+
+/* Print the number and its classification */
 printf("%d %s", n, last_string);
 
 return (0);
 
 }
-
