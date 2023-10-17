@@ -21,6 +21,7 @@ int number_size;
 char last_number;
 int last_digit;
 char last_string[50];
+char text[] = "Last digit of";
 
 srand(time(0));
 n = rand() - RAND_MAX / 2;
@@ -53,16 +54,18 @@ strcpy(last_string, "less than 6 and not 0\n");
 
 if (n < 0)
 {
-printf("Last digit of %s is -%c and is %s",
-    random_string_number,
-    last_number,
+printf("%s %s is -%c and is %s", 
+    text, 
+    random_string_number, 
+    last_number, 
     last_string);
 }
 else
 {
-printf("Last digit of %s is %c and is %s",
-    random_string_number,
-    last_number,
+printf("%s %s is %c and is %s", 
+    text, 
+    random_string_number, 
+    last_number, 
     last_string);
 }
 

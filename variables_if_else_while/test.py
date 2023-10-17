@@ -1,1 +1,1 @@
-print(len('printf("Last digit of %d is %d and is %s", n, last_digit, last_string);'))
+print(len('printf("Last digit of %s is -%c and is %s", '))
