@@ -16,7 +16,7 @@
 
 int main(void)
 {
-int n = -98;
+int n;
 char random_string_number[100];
 int number_size;
 char last_number;
@@ -24,7 +24,7 @@ int last_digit;
 char last_string[50];
 
 srand(time(0));
-// n = rand() - RAND_MAX / 2;
+n = rand() - RAND_MAX / 2;
 
 sprintf(random_string_number, "%d", n);
 number_size = strlen(random_string_number);
