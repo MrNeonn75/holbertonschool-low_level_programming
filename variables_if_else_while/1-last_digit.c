@@ -33,7 +33,8 @@ last_number = random_string_number[number_size - 1];
 /* Convert char to int */
 last_digit = last_number - '0';
 
-if (n >= 0){
+if (n >= 0)
+{
 if (last_digit > 5)
 {
 strcpy(last_string, "greater than 5\n");
@@ -53,7 +54,7 @@ else
 strcpy(last_string, "less than 6 and not 0\n");
 }
 
-if (n<0)
+if (n < 0)
 {
 printf("Last digit of %s is -%c and is %s", random_string_number, last_number, last_string);
 }
