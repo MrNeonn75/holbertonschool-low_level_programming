@@ -13,54 +13,55 @@
  *
  * Return: Always 0.
  */
-
 int main(void)
 {
 int n;
-char rsn[100];
+char r[100];
 int number_size;
-char last_num;
+char ln;
 int last_digit;
-char last_str[50];
+char ls[50];
+char a[] = "Last digit of";
+char f[] = " and is ";
 
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 
-sprintf(rsn, "%d", n);
-number_size = strlen(rsn);
-last_num = rsn[number_size - 1];
+sprintf(r, "%d", n);
+number_size = strlen(r);
+ln = r[number_size - 1];
 
 /* Convert char to int */
-last_digit = last_num - '0';
+last_digit = ln - '0';
 
 if (n >= 0)
 {
 if (last_digit > 5)
 {
-strcpy(last_str, "greater than 5\n");
+strcpy(ls, "greater than 5\n");
 }
-else if (last_digit == 0)
+else if (ls == 0)
 {
-strcpy(last_str, "0\n");
+strcpy(ls, "0\n");
 }
 else
 {
-strcpy(last_str, "less than 6 and not 0\n");
+strcpy(ls, "less than 6 and not 0\n");
 }
 
 }
 else
 {
-strcpy(last_str, "less than 6 and not 0\n");
+strcpy(ls, "less than 6 and not 0\n");
 }
 
 if (n < 0)
 {
-printf("Last digit of %s is -%c and is %s", rsn, last_num, last_str);
+printf("%s %s is -%c%s%s",a, r, ln, f, ls);
 }
 else
 {
-printf("Last digit of %s is %c and is %s", rsn, last_num, last_str);
+printf("%s %s is %c%s%s",a, r, ln, f, ls);
 }
 
 return (0);
