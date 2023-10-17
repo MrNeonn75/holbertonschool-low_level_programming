@@ -13,6 +13,7 @@
  *
  * Return: Always 0.
  */
+
 int main(void)
 {
 int n;
@@ -21,16 +22,17 @@ srand(time(0));
 n = rand() - RAND_MAX / 2;
 
 char random_string_number[100];
-sprintf(random_string_number, "%d", n);
-
-int number_size = strlen(random_string_number);
-char last_number = random_string_number[number_size - 1];
+int number_size;
+char last_number;
 int last_digit;
+char last_string[50];
+
+sprintf(random_string_number, "%d", n);
+number_size = strlen(random_string_number);
+last_number = random_string_number[number_size - 1];
 
 /* Convert char to int */
 last_digit = last_number - '0';
-
-char last_string[50];
 
 if (last_digit > 5)
 {
