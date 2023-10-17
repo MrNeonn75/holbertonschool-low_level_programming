@@ -16,7 +16,7 @@
 
 int main(void)
 {
-int n;
+int n = -98;
 char random_string_number[100];
 int number_size;
 char last_number;
@@ -24,7 +24,7 @@ int last_digit;
 char last_string[50];
 
 srand(time(0));
-n = rand() - RAND_MAX / 2;
+// n = rand() - RAND_MAX / 2;
 
 sprintf(random_string_number, "%d", n);
 number_size = strlen(random_string_number);
@@ -33,6 +33,7 @@ last_number = random_string_number[number_size - 1];
 /* Convert char to int */
 last_digit = last_number - '0';
 
+if (n >= 0){
 if (last_digit > 5)
 {
 strcpy(last_string, "greater than 5\n");
@@ -45,8 +46,20 @@ else
 {
 strcpy(last_string, "less than 6 and not 0\n");
 }
+}
+else
+{
+strcpy(last_string, "less than 6 and not 0\n");
+}
 
+if (n<0)
+{
+printf("Last digit of %s is -%c and is %s", random_string_number, last_number, last_string);
+}
+else
+{
 printf("Last digit of %s is %c and is %s", random_string_number, last_number, last_string);
+}
 
 return (0);
 
