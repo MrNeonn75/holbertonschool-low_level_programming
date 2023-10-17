@@ -16,7 +16,7 @@
  */
 
 
-int main(void) /* Function main */
+int main(void)
 {
 int n;
 char last_string[50];
@@ -28,7 +28,7 @@ n = rand() - RAND_MAX / 2;
 
 if (n > 0)
 {
-strcpy(last_string, "is positive\n"); /* Fsjfhlsdjkfgblsdflkj */
+strcpy(last_string, "is positive\n");
 }
 else if (n == 0)
 {
