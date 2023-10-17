@@ -17,50 +17,50 @@
 int main(void)
 {
 int n;
-char random_string_number[100];
+char rdm_str_num[100];
 int number_size;
-char last_number;
+char last_num;
 int last_digit;
-char last_string[50];
+char last_str[50];
 
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 
-sprintf(random_string_number, "%d", n);
-number_size = strlen(random_string_number);
-last_number = random_string_number[number_size - 1];
+sprintf(rdm_str_num, "%d", n);
+number_size = strlen(rdm_str_num);
+last_num = rdm_str_num[number_size - 1];
 
 /* Convert char to int */
-last_digit = last_number - '0';
+last_digit = last_num - '0';
 
 if (n >= 0)
 {
 if (last_digit > 5)
 {
-strcpy(last_string, "greater than 5\n");
+strcpy(last_str, "greater than 5\n");
 }
 else if (last_digit == 0)
 {
-strcpy(last_string, "0\n");
+strcpy(last_str, "0\n");
 }
 else
 {
-strcpy(last_string, "less than 6 and not 0\n");
+strcpy(last_str, "less than 6 and not 0\n");
 }
 
 }
 else
 {
-strcpy(last_string, "less than 6 and not 0\n");
+strcpy(last_str, "less than 6 and not 0\n");
 }
 
 if (n < 0)
 {
-printf("Last digit of %s is -%c and is %s", random_string_number, last_number, last_string);
+printf("Last digit of %s is -%c and is %s", rdm_str_num, last_num, last_str);
 }
 else
 {
-printf("Last digit of %s is %c and is %s", random_string_number, last_number, last_string);
+printf("Last digit of %s is %c and is %s", rdm_str_num, last_num, last_str);
 }
 
 return (0);
