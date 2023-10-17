@@ -46,6 +46,7 @@ else
 {
 strcpy(last_string, "less than 6 and not 0\n");
 }
+
 }
 else
 {
