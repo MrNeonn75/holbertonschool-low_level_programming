@@ -4,6 +4,7 @@
  */
 
 #include <stdio.h>
+#include <ctype.h>
 
 /**
  * main - Prints the alphabet in lowecase, followed by new line
@@ -18,6 +19,11 @@ char variable = 10;
 for (letter = 'a'; letter <= 'z'; letter++)
 {
 putchar(letter);
+}
+
+for (letter = 'a'; letter <= 'z'; letter++)
+{
+putchar(toupper(letter));
 }
 
 putchar(variable);
