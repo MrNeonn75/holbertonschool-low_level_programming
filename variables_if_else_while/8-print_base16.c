@@ -1,5 +1,5 @@
 /*
- * File: 6-print_numberz.c
+ * File: 8-print_base16.c
  * Auth: 7727@holbertonschool.com
  */
 
@@ -7,7 +7,7 @@
 
 
 /**
- * main - Prints all single digit numbers of base 10 starting 0,
+ * main - Prints all single digit numbers of base 16 starting 0,
  *  followed by new line
  *
  * Return: Always 0.
