@@ -14,11 +14,12 @@
  */
 int main(void)
 {
-int number;
+char base16[] = "0123456789abcdef";
+int i;
 
-for (number = 48; number < 58; number++)
+for (i = 0; i < 16; i++)
 {
-putchar(number);
+putchar(base16[i]);
 }
 
 putchar(10);
