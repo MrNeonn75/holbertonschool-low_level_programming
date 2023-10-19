@@ -1,5 +1,5 @@
 /*
- * File: 5-print_numbers.c
+ * File: 6-print_numberz.c
  * Auth: 7727@holbertonschool.com
  */
 
@@ -15,12 +15,12 @@ int main(void)
 {
 int number;
 
-for (number = 0; number < 10; number++)
+for (number = 48; number < 58; number++)
 {
-printf("%d", number);
+putchar(number);
 }
 
-printf("\n");
+putchar(10);
 
 return (0);
 
