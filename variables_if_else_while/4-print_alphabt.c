@@ -4,10 +4,10 @@
  */
 
 #include <stdio.h>
-#include <ctype.h>
+
 
 /**
- * main - Prints the alphabet in lowecase and uppercase, followed by new line
+ * main - Prints the alphabet in lowecase without q and e, followed by new line
  *
  * Return: Always 0.
  */
@@ -18,13 +18,17 @@ char variable = 10;
 
 for (letter = 'a'; letter <= 'z'; letter++)
 {
+if ((letter == 'q') || (letter == 'e'))
+{
+continue;
+}
+else
+{
 putchar(letter);
 }
 
-for (letter = 'a'; letter <= 'z'; letter++)
-{
-putchar(toupper(letter));
 }
+
 
 putchar(variable);
 
