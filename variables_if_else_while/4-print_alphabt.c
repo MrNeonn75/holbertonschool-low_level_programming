@@ -1,5 +1,5 @@
 /*
- * File: 2-print_alphabet.c
+ * File: 4-print_alphabt.c
  * Auth: 7727@holbertonschool.com
  */
 
