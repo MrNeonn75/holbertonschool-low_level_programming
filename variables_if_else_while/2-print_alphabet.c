@@ -16,13 +16,14 @@
 int main(void)
 {
 char letter;
+char variable = 10;
 
 for (letter = 'a'; letter <= 'z'; letter++)
 {
 putchar(letter);
 }
 
-putchar('\n');
+putchar(variable);
 
 return (0);
 
