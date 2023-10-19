@@ -44,8 +44,9 @@ int n;
 char random_string_number[100];
 char last_string[50];
 char text[] = "Last digit of";
-int last_digit = get_last_digit(n);
+int last_digit;
 
+last_digit = get_last_digit(n);
 
 srand(time(0));
 n = rand() - RAND_MAX / 2;
