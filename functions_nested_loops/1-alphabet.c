@@ -5,6 +5,7 @@
 
 #include <stdio.h>
 #include "main.h"
+#include "_putchar.c"
 
 /**
  * main - Prints the alphabet, in lowercase, followed by a new line
@@ -14,7 +15,14 @@
 
 int main(void)
 {
-print_alphabet();
+char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
+int len = strlen(alphabet);
+int i;
+
+for(i = 0; i < len; i++)
+{
+_putchar(alphabet[i]);
+}
 
 return (0);
 
