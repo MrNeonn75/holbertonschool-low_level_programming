@@ -18,6 +18,6 @@ for(i = 0; i < len; i++)
 {
 _putchar(alphabet[i]);
 }
-
+_putchar(10);
 }
 
