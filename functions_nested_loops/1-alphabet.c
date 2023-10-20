@@ -3,17 +3,12 @@
  * Author: 7727@holbertonschool.com
  */
 
-#include <stdio.h>
+#include <string.h>
 #include "main.h"
-#include "_putchar.c"
 
-/**
- * main - Prints the alphabet, in lowercase, followed by a new line
- *
- * Return: Always 0.
- */
 
-int main(void)
+
+void print_alphabet(void)
 {
 char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
 int len = strlen(alphabet);
@@ -24,6 +19,5 @@ for(i = 0; i < len; i++)
 _putchar(alphabet[i]);
 }
 
-return (0);
-
 }
+
