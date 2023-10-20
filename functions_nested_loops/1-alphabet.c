@@ -8,7 +8,7 @@
 
 
 /**
- * main - Prints _putchar
+ * print_alphabet - Prints alphabet
  *
  * Return: Always 0.
  */
