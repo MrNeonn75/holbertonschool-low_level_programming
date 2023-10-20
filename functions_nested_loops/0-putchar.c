@@ -14,7 +14,14 @@
 
 int main(void)
 {
-puts("_putchar");
+int i;
+char text[] = "_putchar";
+
+for(i = 0; i < 8; i++)
+{
+_putchar(text[i]);
+}
+
 
 return (0);
 
