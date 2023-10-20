@@ -3,8 +3,8 @@
  * Author: 7727@holbertonschool.com
  */
 
-
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - Prints _putchar
@@ -14,14 +14,7 @@
 
 int main(void)
 {
-int i;
-char text[] = "_putchar";
-
-for(i = 0; i < 8; i++)
-{
-_putchar(text[i]);
-}
-
+_putchar("_putchar");
 
 return (0);
 
