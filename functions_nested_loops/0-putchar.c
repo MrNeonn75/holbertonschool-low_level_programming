@@ -14,7 +14,7 @@
 
 int main(void)
 {
-_putchar("_putchar");
+__putchar("_putchar");
 
 return (0);
 

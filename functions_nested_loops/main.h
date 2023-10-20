@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-void _putchar (char text[])
+void __putchar (char text[])
 {
 int len = strlen(text);
 int i;
