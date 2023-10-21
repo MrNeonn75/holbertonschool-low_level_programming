@@ -7,7 +7,7 @@
 #include "main.h"
 
 /**
- * _islower - Checks if a character is letter.
+ * _isalpha - Checks if a character is letter.
  * @c: The character to be checked.
  *
  * Return: 1 if the character is letter, 0 otherwise.
