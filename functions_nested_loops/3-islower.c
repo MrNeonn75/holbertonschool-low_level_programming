@@ -1,5 +1,5 @@
 /*
- * File: 2-print_alphabet_x10.c
+ * File: 3-islower.c
  * Author: 7727@holbertonschool.com
  */
 
@@ -7,10 +7,10 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - Prints 10 tmies alphabet in lowercase
+ * _islower - Checks if a character is lowercase.
+ * @c: The character to be checked.
  *
- * Return: Always 0.
- * char c : input a char
+ * Return: 1 if the character is lowercase, 0 otherwise.
  */
 int _islower(char c)
 {
@@ -23,6 +23,4 @@ else
 return (0);
 }
 
-
 }
-
