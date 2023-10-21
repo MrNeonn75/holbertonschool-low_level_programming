@@ -7,7 +7,7 @@
 
 /**
  * print_last_digit - A function that computes
- * the absolute value of an integer. 
+ *  the absolute value of an integer.
  * @x: The character to be checked.
  *
  * Return: Absolute value of an integer.
