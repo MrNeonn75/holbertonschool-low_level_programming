@@ -7,7 +7,6 @@
 
 /**
  * _abs - A function that computes the absolute value of an integer.
- * 
  * @x: The character to be checked.
  *
  * Return: Absolute value of an integer.

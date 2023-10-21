@@ -3,7 +3,6 @@
  * Author: 7727@holbertonschool.com
  */
 
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -21,9 +20,14 @@ int last_digit = x % 10;
 if (last_digit < 0)
 {
 last_digit = last_digit * -1;
-}
 
-printf("%d", last_digit);
+_putchar((char)last_digit);
 return (last_digit);
+}
+else
+{
+_putchar((char)last_digit);
+return (last_digit);
+}
 
 }
