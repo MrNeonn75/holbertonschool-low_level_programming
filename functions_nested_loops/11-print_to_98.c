@@ -9,7 +9,7 @@
 /**
  * print_to_98 - A function that prints all natural numbers from n to 98,
  *  followed by a new line.
- * @n - Choosen number.
+ * @n: Choosen number.
  *
  * Return: Nothing.
  */

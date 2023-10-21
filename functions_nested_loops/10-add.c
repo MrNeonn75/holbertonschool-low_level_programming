@@ -7,9 +7,9 @@
 
 /**
  * add - A function that adds two integers and returns the result.
- * @a - First number
- * @b - Second number
- * 
+ * @a: First number
+ * @b: Second number
+ *
  * Return: Nothing.
  */
 
