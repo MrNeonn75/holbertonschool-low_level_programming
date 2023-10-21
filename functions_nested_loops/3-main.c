@@ -1,7 +1,7 @@
 
 #include "main.h"
 /**
- * main - Prints 10 times the alphabet, in lowercase, followed by a new line
+ * main - 1 if the character is lowercase, 0 otherwise.
  *
  * Return: Always 0.
  */
