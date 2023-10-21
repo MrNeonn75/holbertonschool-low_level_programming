@@ -6,12 +6,14 @@
 #include "main.h"
 
 /**
- * times_table - A function that adds two integers and returns the result.
- *
+ * add - A function that adds two integers and returns the result.
+ * @a - First number
+ * @b - Second number
+ * 
  * Return: Nothing.
  */
 
 int add(int a, int b)
 {
-return a + b;
+return (a + b);
 }
