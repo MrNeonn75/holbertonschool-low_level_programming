@@ -10,8 +10,7 @@
  * print_alphabet_x10 - Prints 10 tmies alphabet in lowercase
  *
  * Return: Always 0.
- * 
- * char c - input a char
+ * char c : input a char
  */
 int _islower(char c)
 {
