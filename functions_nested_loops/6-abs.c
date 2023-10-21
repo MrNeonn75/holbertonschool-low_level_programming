@@ -3,7 +3,6 @@
  * Author: 7727@holbertonschool.com
  */
 
-#include <ctype.h>
 #include "main.h"
 
 /**
@@ -13,22 +12,16 @@
  * Return: 1 if the number is greater than 0,
  *  0 - if number equal to 0, -1 otherwise.
  */
-int print_sign(int c)
+
+int _abs(int x)
 {
-if (c > 0)
+if (x < 0)
 {
-_putchar('+');
-return (1);
-}
-else if (c < 0)
-{
-_putchar('-');
-return (-1);
+return (x * -1);
 }
 else
 {
-_putchar('0');
-return (0);
+return (x);
 }
 
 }
