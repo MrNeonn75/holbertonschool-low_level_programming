@@ -6,14 +6,13 @@
 #include "main.h"
 
 /**
- * print_last_digit - A function that prints the 9 times table,
- *  starting with 0.
- * @x: The character to be checked.
+ * jack_bauer - A function that prints every minute
+ *  of the day of Jack Bauer, starting from 00:00 to 23:59.
  *
  * Return: Nothing.
  */
 
-void jack_bauer()
+void jack_bauer(void)
 {
 int hour;
 int minute;
