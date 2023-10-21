@@ -19,7 +19,7 @@ int len = strlen(alphabet);
 int i;
 int time;
 
-for (time = 0; time <10; time++)
+for (time = 0; time < 10; time++)
 {
 
 for (i = 0; i < len; i++)
