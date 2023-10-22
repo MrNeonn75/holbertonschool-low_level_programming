@@ -10,7 +10,7 @@
  *  followed by a new line, without 2 and 4.
  * 
  *
- * Return: 1 if c is uppercase, 0 otherwise.
+ * Return: Nothing
  */
 
 void print_most_numbers(void)
