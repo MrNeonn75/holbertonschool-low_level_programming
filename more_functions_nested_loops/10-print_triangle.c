@@ -26,9 +26,9 @@ else
 
 for (i = 0; i <= size - 1; i++)
 {
-for (x = 0; x <= size; x++)
+for (x = 0; x <= size - 1; x++)
 {
-if (x < size - 1 - i)
+if (x < size - i)
 {
 _putchar(32);
 }
