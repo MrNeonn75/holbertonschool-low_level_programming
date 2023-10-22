@@ -28,14 +28,14 @@ for (i = 0; i <= size - 1; i++)
 {
 for (x = 0; x <= size - 1; x++)
 {
-if (x < size - i)
+if (x < size - 1 - i)
 {
 _putchar(32);
 }
 else
 {
 _putchar(35);
-if (x == size)
+if (x == size - 1)
 {
 _putchar(10);
 }
