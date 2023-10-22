@@ -1,5 +1,5 @@
 /*
- * File: 3-print_numbers.c
+ * File: 4-print_most_numbers.c
  * Author: 7727@holbertonschool.com
  */
 

@@ -1,5 +1,5 @@
 /*
- * File: 3-more_numbers.c
+ * File: 5-more_numbers.c
  * Author: 7727@holbertonschool.com
  */
 
