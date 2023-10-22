@@ -6,8 +6,8 @@
 #include "main.h"
 
 /**
- * print_diagonal - A function that prints a square, followed by a new line.
- * @n: the size of the square
+ * print_square - A function that prints a square, followed by a new line.
+ * @size: the size of the square
  *
  * Return: Nothing
  */
