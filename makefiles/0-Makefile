@@ -1,2 +1,6 @@
-all:
-    gcc main.c school.c -o school
+all: school
+school:
+    gcc -Wall -Werror main.c school.c -o school
+
+clean:
+    rm -f school
