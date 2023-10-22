@@ -23,9 +23,9 @@ _putchar(10);
 }
 else
 {
-for (i = 0; i <= size; i++)
+for (i = 0; i <= size - 1; i++)
 {
-for (x = 0; x <= size; x++)
+for (x = 0; x <= size - 1; x++)
 {
 _putchar(35);
 }
