@@ -21,11 +21,13 @@ if (n == 0)
 {
 _putchar(10);
 }
+else
+{
 for (x = 0; x <= n; x++)
 {
 for (i = 0; i <= x; i++)
 {
-if (i == x && n != 0)
+if (i == x )
 {
 _putchar(92);
 _putchar(10);
@@ -35,6 +37,7 @@ else
 _putchar(32);
 }
 
+}
 }
 }
 
