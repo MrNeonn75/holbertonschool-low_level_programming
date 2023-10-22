@@ -1,6 +1,2 @@
-all: school
-school:
-    gcc -Wall -Werror main.c m.h school.c -o school
-
-clean:
-    rm -f school
+all: main.c holberton.c 
+	gcc main.c holberton.c -o holberton
