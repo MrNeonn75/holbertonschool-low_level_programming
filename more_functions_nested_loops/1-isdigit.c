@@ -6,7 +6,7 @@
 #include "main.h"
 
 /**
- * _isupper - A function that checks  a digit (0 through 9).
+ * _isdigit - A function that checks  a digit (0 through 9).
  * @c: Choosen character (ASCII)
  *
  * Return: 1 if c is uppercase, 0 otherwise.
