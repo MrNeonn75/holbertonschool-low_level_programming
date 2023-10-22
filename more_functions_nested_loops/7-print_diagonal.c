@@ -23,7 +23,7 @@ _putchar(10);
 }
 else
 {
-for (x = 0; x <= n; x++)
+for (x = 0; x <= n + 1; x++)
 {
 for (i = 0; i <= x; i++)
 {
