@@ -26,23 +26,23 @@ else
 
 for (i = 0; i <= size - 1; i++)
 {
-    for (x = 0; x <= size; x++)
-    {
-        if (x < size - 1 - i)
-        {
-            _putchar(32);
-        }
-        else
-        {
-            _putchar(35);
-            if (x == size)
-            {
-                _putchar(10);
-            }
-            
-        }
-        
-    }
+for (x = 0; x <= size; x++)
+{
+if (x < size - 1 - i)
+{
+_putchar(32);
+}
+else
+{
+_putchar(35);
+if (x == size)
+{
+_putchar(10);
+}
+
+}
+
+}
 }
 
 }
