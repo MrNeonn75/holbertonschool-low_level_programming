@@ -1,6 +1,6 @@
 all: school
 school:
-    gcc -Wall -Werror main.c school.c -o school
+    gcc -Wall -Werror main.c m.h school.c -o school
 
 clean:
     rm -f school
