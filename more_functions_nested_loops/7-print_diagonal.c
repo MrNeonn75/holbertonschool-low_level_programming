@@ -17,7 +17,7 @@ void print_diagonal(int n)
 int i;
 int x;
 
-if (n == 0)
+if (n <= 0)
 {
 _putchar(10);
 }
