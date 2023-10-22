@@ -6,7 +6,7 @@
 #include "main.h"
 
 /**
- * print_line - A function that draws a diagonal line on the terminal.
+ * print_diagonal - A function that draws a diagonal line on the terminal.
  * @n: the number of times the character \ should be printed
  *
  * Return: Nothing
@@ -27,7 +27,7 @@ for (x = 0; x <= n; x++)
 {
 for (i = 0; i <= x; i++)
 {
-if (i == x )
+if (i == x)
 {
 _putchar(92);
 _putchar(10);
