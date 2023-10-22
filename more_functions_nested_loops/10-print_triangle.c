@@ -19,7 +19,7 @@ int x;
 
 if (size <= 0)
 {
-    _putchar(10);
+_putchar(10);
 }
 else
 {
