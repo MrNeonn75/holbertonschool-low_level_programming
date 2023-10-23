@@ -1,5 +1,5 @@
 /*
- * File: 6-abs.c
+ * File: 0-reset_to_98.c
  * Author: 7727@holbertonschool.com
  */
 
@@ -7,7 +7,7 @@
 
 /**
  * reset_to_98 - A function that updates the value it points to to 98.
- * @*n: A pointer.
+ * @n: A pointer.
  *
  * Return: Nothing.
  */
