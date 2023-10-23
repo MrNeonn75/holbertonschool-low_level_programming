@@ -7,7 +7,7 @@
 #include "main.h"
 
 /**
- * swap_int - A function that returns the length of a string.
+ * _strlen - A function that returns the length of a string.
  * @s: String.
  *
  * Return: The length of a string.
