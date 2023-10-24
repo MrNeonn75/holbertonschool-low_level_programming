@@ -21,11 +21,11 @@ int i;
 char memory;
 
 for (i = len - 1; i >= len / 2; i--)
-	{
-		memory = s[i];
-		s[i] = s[len - i - 1];
-		s[len - i - 1] = memory;
-	}
+{
+memory = s[i];
+s[i] = s[len - i - 1];
+s[len - i - 1] = memory;
+}
 
 }
 
