@@ -3,6 +3,7 @@
  * Author: 7727@holbertonschool.com
  */
 
+#include <stdio.h>
 #include <string.h>
 #include "main.h"
 
@@ -18,11 +19,12 @@ void print_rev(char *s)
 int len = (int)strlen(s);
 int i;
 
+
 for (i = len; i >= 0; i--)
 {
-_putchar(s[i]);
+printf("%c", s[i]);
 }
-
+printf("\n");
 
 }
 
