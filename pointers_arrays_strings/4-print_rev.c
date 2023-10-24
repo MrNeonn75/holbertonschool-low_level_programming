@@ -1,15 +1,14 @@
 /*
- * File: 3-puts.c
+ * File: 4-print_rev.c
  * Author: 7727@holbertonschool.com
  */
 
-#include <stdio.h>
 #include <string.h>
 #include "main.h"
 
 /**
- * _puts - A function that prints the string, followed by new line.
- * @str: String.
+ * print_rev - A function that prints the string, followed by new line.
+ * @s: String.
  *
  * Return: Nothing
  */
@@ -19,12 +18,11 @@ void print_rev(char *s)
 int len = (int)strlen(s);
 int i;
 
-
-for (i = len; i >= 0; i--)
+for (i = len - 1; i >= 0; i--)
 {
-printf("%c", s[i]);
+_putchar(s[i]);
 }
-printf("\n");
+_putchar(10);
 
 }
 
