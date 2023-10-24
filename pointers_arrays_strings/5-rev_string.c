@@ -3,11 +3,12 @@
  * Author: 7727@holbertonschool.com
  */
 
+#include <stdio.h>
 #include <string.h>
 #include "main.h"
 
 /**
- * print_rev - A function that prints the string.
+ * rev_string - A function that prints the string.
  * @s: String.
  *
  * Return: Nothing
@@ -20,7 +21,7 @@ int i;
 
 for (i = len - 1; i >= 0; i--)
 {
-_putchar(s[i]);
+putchar(s[i]);
 }
 
 }
