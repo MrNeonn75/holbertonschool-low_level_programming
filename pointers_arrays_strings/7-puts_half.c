@@ -1,5 +1,5 @@
 /*
- * File: 6-puts2.c
+ * File: 7-puts_half.c
  * Author: 7727@holbertonschool.com
  */
 
@@ -33,4 +33,5 @@ for (index = n; index < len; index++)
 _putchar(str[index]);
 
 _putchar('\n');
+
 }
