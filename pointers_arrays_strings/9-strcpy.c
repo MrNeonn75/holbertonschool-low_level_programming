@@ -1,9 +1,16 @@
+/*
+ * File: 9-strcpy.c
+ * Author: 7727@holbertonschool.com
+ */
+
+#include "main.h"
+
 /**
  * _strcpy - A function that copies the string pointed to by src,
  *  including the terminating null byte (\0),
  *  to the buffer pointed to by dest.
  * @dest: Variable
- * @str: String
+ * @src: String
  *
  * Return: The value of pointer dest
  */
