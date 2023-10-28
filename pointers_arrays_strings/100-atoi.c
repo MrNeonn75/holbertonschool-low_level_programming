@@ -3,8 +3,6 @@
  * Author: 7727@holbertonschool.com
  */
 
-#include <stdio.h>
-#include <string.h>
 #include "main.h"
 
 /**
