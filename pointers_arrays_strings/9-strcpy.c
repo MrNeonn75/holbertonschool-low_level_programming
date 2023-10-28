@@ -1,9 +1,3 @@
-/*
- * File: 9-strcpy.c
- * Author: 7727@holbertonschool.com
- */
-
-
 /**
  * _strcpy - A function that copies the string pointed to by src,
  *  including the terminating null byte (\0),
