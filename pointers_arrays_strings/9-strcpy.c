@@ -3,7 +3,6 @@
  * Author: 7727@holbertonschool.com
  */
 
-#include "main.h"
 
 /**
  * _strcpy - A function that copies the string pointed to by src,
