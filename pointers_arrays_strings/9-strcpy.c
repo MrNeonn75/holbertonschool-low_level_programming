@@ -10,15 +10,15 @@
  * Return: The value of pointer dest
  */
 
-char *_strcpy(char *dest, const char *src)
+char *_strcpy(char *dest, char *src)
 {
-	int index = 0;
+	char *dest_start = dest;
 
-	while (src[index])
+	while ((*dest = *src) != '\0')
 	{
-		dest[index] = src[index];
-		index++;
+		dest++;
+		src++;
 	}
-
-	return (dest);
+	*dest = '\0';
+	return (dest_start);
 }
