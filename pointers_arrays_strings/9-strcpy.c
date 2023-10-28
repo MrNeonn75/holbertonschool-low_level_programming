@@ -3,6 +3,7 @@
  * Author: 7727@holbertonschool.com
  */
 
+#include <string.h>
 #include "main.h"
 
 /**
@@ -15,15 +16,7 @@
  * Return: The value of pointer dest
  */
 
-char *_strcpy(char *dest, const char *src)
+char *_strcpy(char *dest, char *src)
 {
-	int index = 0;
-
-	while (src[index])
-	{
-		dest[index] = src[index];
-		index++;
-	}
-
-	return (dest);
+	strcpy(dest, src);
 }
