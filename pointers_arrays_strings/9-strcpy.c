@@ -3,7 +3,6 @@
  * Author: 7727@holbertonschool.com
  */
 
-#include <string.h>
 #include "main.h"
 
 /**
@@ -19,7 +18,6 @@
 char *_strcpy(char *dest, const char *src)
 {
 	char *memory = dest;
-
 	while ((*dest = *src) != '\0')
 	{
 		dest++;
