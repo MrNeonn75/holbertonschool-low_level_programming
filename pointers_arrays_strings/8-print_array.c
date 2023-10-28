@@ -30,7 +30,7 @@ printf("%d, ", a[i]);
 else
 {
 printf("%d\n", a[i]);
-}   
+}
 
 }
 }
