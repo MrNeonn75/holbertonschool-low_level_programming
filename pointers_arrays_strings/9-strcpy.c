@@ -1,8 +1,3 @@
-/*
- * File: 9-strcpy.c
- * Author: 7727@holbertonschool.com
- */
-
 #include "main.h"
 
 /**
