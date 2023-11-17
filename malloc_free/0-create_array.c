@@ -21,7 +21,7 @@ char *create_array(unsigned int size, char c)
 
         if (array == 0)
         {
-            return (0);
+            return (NULL);
         }
 
         for (i = 0; i <= size; i++)
@@ -35,6 +35,6 @@ char *create_array(unsigned int size, char c)
     }
     else
     {
-        return (0);
+        return (NULL);
     }
 }
