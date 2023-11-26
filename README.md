@@ -1,1 +1,1 @@
-New repository. Language - C.
+C - Structures, typedef
