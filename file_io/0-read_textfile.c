@@ -16,7 +16,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
     char *str;
     FILE *ptr =fopen(filename, "r");
 
-    str = malloc(letters * sizeof(char) + 22);
+    str = malloc(letters * sizeof(char));
 
     if (str == NULL)
     {
@@ -28,7 +28,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
         return (0);
     }
 
-    fread(&str, sizeof(char), letters, ptr);
+    fread(&str, sizeof(char), letters + 22, ptr);
 
     write(1, &str, letters);
 
