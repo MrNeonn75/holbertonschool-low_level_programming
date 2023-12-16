@@ -16,7 +16,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
     char *str;
     FILE *ptr =fopen(filename, "r");
 
-    str = malloc(letters * sizeof(char));
+    str = malloc(letters * sizeof(char) + 22);
 
     if (str == NULL)
     {
