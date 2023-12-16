@@ -28,14 +28,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
         return (0);
     }
 
-    if(fgets(str, letters, ptr) != NULL) 
-    {
-        write(1, &str, letters);
-    }
-    else
-    {
-        return (0);
-    }
+    fread(&str, sizeof(char), letters, ptr);
+
+    write(1, &str, letters);
 
     fclose(ptr);
 
