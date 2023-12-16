@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stddef.h>
 #include <unistd.h>
+#include <stdlib.h>
 
 /**
  * sum_them_all -  sums all arguments variadic
@@ -15,7 +16,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
     char *str;
     FILE *ptr =fopen(filename, "r");
 
+    str = malloc(letters * sizeof(char));
 
+    if (str == NULL)
+    {
+        return (0);
+    }
+    
     if (ptr == NULL)
     {
         return (0);
