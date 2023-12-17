@@ -1,47 +1,51 @@
 #include "main.h"
-#include <stdio.h>
-#include <stddef.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
 #include <unistd.h>
 #include <stdlib.h>
-#include <fcntl.h>
 
 /**
- * sum_them_all -  sums all arguments variadic
- * @n: Number of Arguments
- * @...: Arguments Variadic
+ * read_textfile -  reads a text file and prints it
+ * to the POSIX standard output
+ * @filename: name of the file
+ * @letters: number of letters it should read and print
  *
- * Return: sum of its parameters
+ * Return: returns the actual number of letters it could read and print
+ * 0 if file cannot be opened or read
+ * 0 if filename is NULL
+ * 0 if write fails or does not write expected amount of bytes
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-    char *str;
-    int ptr, size, i;
+	int fd, checkr, checkw;
+	char *c;
 
-    ptr = open(filename, O_RDONLY);
+	if (filename == 0)
+		return (0);
 
-    str = malloc(letters * sizeof(char));
+	c = malloc(letters + 1);
 
-    if (str == NULL)
-    {
-        return (0);
-    }
-    
-    if (ptr < 0)
-    {
-        return (0);
-    }
+	if (c == 0)
+		return (0);
 
-    size = read(ptr, str, letters);
+	fd  = open(filename, O_RDONLY);
 
-    for(i = 0; i < size; i++){
-        _putchar(str[i]);
-    }
-    _putchar(10);
+	if (fd == -1)
+		return (free(c), 0);
 
-    write(1, &str, letters);
+	checkr = read(fd, c, letters);
 
-    close(ptr);
+	if (checkr == -1)
+		return (free(c), 0);
 
-    return (size + 1);
+	c[letters] = '\0';
 
+	checkw = write(STDOUT_FILENO, c, checkr);
+	if (checkw == -1)
+		return (free(c), 0);
+
+	free(c);
+	close(fd);
+	return (checkw);
 }
